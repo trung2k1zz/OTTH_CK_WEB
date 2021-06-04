@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kiểm tra Thực Hành</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container-fluid table-bordered">
+        <div class="row col-lg-12">
+            <header class="row col-lg-12">
+                <div class="col-lg-3">
+                    <img src="../img/logo.PNG" alt="">
+                </div>
+                <div class="col-lg-9">
+                    <p class="title">ĐOÀN THANH NIÊN TRƯỜNG ĐẠI HỌC CÔNG NGHIỆP <P class="text-center center">TP.HCM</p>
+                    <p class="desc text-center">ĐOÀN THANH NIÊN KHOA CÔNG NGHỆ THÔNG TIN</p>
+                </div>
+            </header>
+        </div>
+
+        <div class="row col-lg-12">
+            <nav class="navbar-collapse">
+                <ul class="nav nav-tabs">
+                    <li><a class="nav-link" href="#">Trang chủ</a></li>
+                    <li><a class="nav-link" href="#">Đoàn thể</a></li>
+                    <li><a class="nav-link" href="#">Sự kiện</a></li>
+                    <li class="parent-nav"><a class="nav-link dropdown-toggle" href="#">Hoạt động</a>
+                        <ul class="sub-nav">
+                            <li><a href="#" class="nav-link" id="openModal">Đăng ký</a></li>
+                            <li><a href="#" class="nav-link">Tham gia</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="row col-lg-12">
+            <div class="left col-lg-6">
+                <img src="../img/ngayhoithanhnien.JPG" alt="">
+            </div>
+            <div class="right col-lg-6">
+                <div class="content">
+                    <h3 style="color: brown;">TIN NÔỈ BẬT</h3>
+                        <ul class="list-content">
+                            <li><a href="#">Mùa hè xanh</a></li>
+                            <li><a href="#">Thanh niên tình nguyện</a></li>
+                            <li><a href="#">Tấm lòng vàng</a></li>
+                            <li><a href="#">Hiến máu nhân đạo</a></li>
+                            <li><a href="#">Bảo vệ môi trường sạch</a></li>
+                            <li><a href="#">Thi đua lập thành tích chào mừng 26/3</a></li>
+                        </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="row col-lg-12">
+            <h5 class="text-center col-lg-12">DANH SÁCH ĐĂNG KÝ HOẠT ĐỘNG MÙA HÈ XANH</h5>
+            <table class="table table-striped">
+                <tr>
+                    <th>STT</th>
+                    <th>Mã SV</th>
+                    <th>Tên SV</th>
+                    <th>Ngày Tham Gia</th>
+                    <th>Email</th>
+                    <th>Ảnh</th>
+                </tr>
+            </table>
+        </div>
+
+        <div class="row col-lg-12">
+            <footer class="row col-lg-12">
+                <p class="fix-right">&copy;2020-2021:Đoàn thanh niên-Khoa CNTT Trường DHCN TP.HCM</p>
+            </footer>
+        </div>
+    </div>
+
+    <div class="modal" id="modal" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <p class="fix-center    ">THÔNG TIN ĐĂNG KÝ</p>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label>Mã sinh viên</label>
+                            <div>
+                                <input type="text" id="msv" placeholder="Mã sinh viên" class="form-control">
+                                <span id="tbMSV"></span>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Tên sinh viên</label>
+                            <div>
+                                <input type="text" id="name" placeholder="Họ tên"  class="form-control">
+                                <span id="tbName"></span>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Ngày tham gia</label>
+                            <div>
+                                <input type="date" id="date"  class="form-control">
+                                <span id="tbDate"></span>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Email</label>
+                            <div>
+                                <input type="email" id="mail" placeholder="Địa chỉ email"  class="form-control">
+                                <span id="tbMail"></span>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <p style="font-weight: 500;">Ảnh thẻ<p>
+                            
+                            <div>
+                                <input type="file" id="pic"  accept=".jpg, .jpeg, .png"  class="form-control">
+                                <span id="tbPic"></span>
+                            </div>
+                        </div>
+
+                        <input type="button" value="Lưu" id="dangky" class="btn-block" style="background-color: red; color: #fff;">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../js/main.js"></script>
+</body>
+</html>
